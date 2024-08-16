@@ -2,7 +2,7 @@
 
 .main-container{
     max-width: 72em;
-    margin:  auto;
+    margin: 0 auto;
     border-left: 1em dashed black;
     border-right: 1em dashed black;
     font-family: "Copperplate Gothic Light";
@@ -43,6 +43,12 @@
     flex-direction: column;
     border-radius: 1em;
     overflow: hidden;
+}
+
+.text-container{
+    display: flex;
+    align-items: center;
+    justify-items: center;
 }
 
 .quote-text{
@@ -148,27 +154,27 @@
     grid-template-columns: repeat(12em,1em);
     grid-template-rows: repeat(8em,auto);
     grid-template-areas:
-    " ban ban ban ban" 
+    " ban . . . " 
     " .  .   .   .  " 
     " ic1 ic1 ic1 ic1" 
-    " tx1 tx1 tx1 tx1 " 
+    " tx1 . .  . " 
     " aq1 aq1 aq1 aq1" 
     "   .  .   .   . " 
     " ic2 ic2 ic2 ic2" 
-    " tx2 tx2 tx2 tx2" 
-    "aq2 aq2 aq2 aq2" 
-    "   .  .   .   . " 
+    " tx2  .   .   . " 
+    " aq2 aq2 aq2 aq2" 
+    "  .  .   .   . " 
     "ic3 ic3 ic3 ic3 " 
-    "tx3 tx3 tx3 tx3 " 
+    "tx3  .   .   .  " 
     "aq3 aq3 aq3 aq3 " 
     "   .  .   .   . " 
     "ic4 ic4 ic4 ic4 " 
-    "tx4 tx4 tx4 tx4 " 
+    "tx4  .   .   .  " 
     "aq4 aq4 aq4 aq4 " 
     "   .  .   .   . " 
-    "tx5 tx5 tx5 tx5" 
+    "tx5  .   .   .  " 
     "aq5 aq5 aq5 aq5"  
-    "tx6 tx6 tx6 tx6"
+    "tx6  .   .   .  "
     "   .  .   .   . " 
     "ic5 ic5 ic5 ic5 " 
     "   .  .   .   . " 
@@ -186,7 +192,7 @@
         grid-template-columns: repeat(12em,1em);
         grid-template-rows: repeat(8em,auto);
         grid-template-areas:
-        "   . ban ban ban ban ban ban  . " 
+        "   .  .  ban ban ban ban  .   . " 
         "   .  .   .   .   .   .   .   . " 
         "   . ic1 ic1 ic1 ic1  .   .   . " 
         "   .  .   .  tx1 tx1 tx1 tx1   . " 
