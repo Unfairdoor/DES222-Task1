@@ -186,7 +186,7 @@
         grid-template-columns: repeat(12em,1em);
         grid-template-rows: repeat(8em,auto);
         grid-template-areas:
-        "   . ban ban ban ban ban ban  . " 
+        "   .  .  ban ban ban ban  .   . " 
         "   .  .   .   .   .   .   .   . " 
         "   . ic1 ic1 ic1 ic1  .   .   . " 
         "   .  .   .  tx1 tx1 tx1 tx1   . " 
