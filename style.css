@@ -1,0 +1,259 @@
+
+
+.main-container{
+    max-width: 72em;
+    margin:  auto;
+    border-left: 1em dashed black;
+    border-right: 1em dashed black;
+    font-family: "Copperplate Gothic Light";
+    font-weight: bolder;
+    display: flex;
+    color: black;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    overflow: hidden;
+    object-fit: fill;
+}
+
+.aquila-container{
+    opacity: .5;
+}
+
+.image-container {
+    max-height: 32em;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.provocation-image-container{
+    width: 100%;
+}
+
+.purity-seal-container{
+    min-height: 32em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.quote-text{
+    align-self: center;
+    font-size: 3em;
+    padding: 1em;
+}
+
+.provocation-image{
+    align-self: center;
+    width: 32em;
+}
+
+#puritySeal{
+    grid-area: ban;
+}
+
+#imageContainer1{
+    grid-area: ic1;
+}
+
+#imageContainer2{
+    grid-area: ic2;
+}
+#imageContainer3{
+    grid-area: ic3;
+}
+
+#imageContainer4{
+    grid-area: ic4;
+}
+
+#imageContainer5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    grid-area: ic5;
+
+}
+
+#textContainer1 {
+    grid-area: tx1;
+}
+
+#textContainer2 {
+    grid-area: tx2;
+}
+
+#textContainer3 {
+    grid-area: tx3;
+}
+
+#textContainer4 {
+    grid-area: tx4;
+}
+
+#textContainer5 {
+    grid-area: tx5;
+}
+
+#textContainer6 {
+    grid-area: tx6;
+}
+
+#provocationImage5{
+    margin-right: 8em;
+}
+
+#sepiaSeal{
+    grid-area: ic6;
+    margin-left: 8em;
+    opacity: 0.5;
+}
+
+#aquila1{
+    grid-area: aq1;
+}
+
+#aquila2{
+    grid-area: aq2;
+}
+#aquila3{
+    grid-area: aq3;
+}
+#aquila4{
+    grid-area: aq4;
+}
+#aquila4{
+    grid-area: aq4;
+}
+#aquila5{
+    grid-area: aq5;
+}
+
+.main-container {
+    display: grid;
+    column-gap: 1em;
+    background-image: url('./img/paper-1074131_1280.jpg');
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    max-width: 72em;
+    overflow: hidden;
+    grid-template-columns: repeat(12em,1em);
+    grid-template-rows: repeat(8em,auto);
+    grid-template-areas:
+    " ban ban ban ban" 
+    " .  .   .   .  " 
+    " ic1 ic1 ic1 ic1" 
+    " tx1 tx1 tx1 tx1 " 
+    " aq1 aq1 aq1 aq1" 
+    "   .  .   .   . " 
+    " ic2 ic2 ic2 ic2" 
+    " tx2 tx2 tx2 tx2" 
+    "aq2 aq2 aq2 aq2" 
+    "   .  .   .   . " 
+    "ic3 ic3 ic3 ic3 " 
+    "tx3 tx3 tx3 tx3 " 
+    "aq3 aq3 aq3 aq3 " 
+    "   .  .   .   . " 
+    "ic4 ic4 ic4 ic4 " 
+    "tx4 tx4 tx4 tx4 " 
+    "aq4 aq4 aq4 aq4 " 
+    "   .  .   .   . " 
+    "tx5 tx5 tx5 tx5" 
+    "aq5 aq5 aq5 aq5"  
+    "tx6 tx6 tx6 tx6"
+    "   .  .   .   . " 
+    "ic5 ic5 ic5 ic5 " 
+    "   .  .   .   . " 
+    "ic6 ic6 ic6 ic6 ";
+}
+
+@media (min-width: 50em) {
+    .main-container {
+        display: grid;
+        column-gap: 1em;
+        background-image: url('./img/paper-1074131_1280.jpg');
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+        max-width: 72em;
+        overflow: hidden;
+        grid-template-columns: repeat(12em,1em);
+        grid-template-rows: repeat(8em,auto);
+        grid-template-areas:
+        "   . ban ban ban ban ban ban  . " 
+        "   .  .   .   .   .   .   .   . " 
+        "   . ic1 ic1 ic1 ic1  .   .   . " 
+        "   .  .   .  tx1 tx1 tx1 tx1   . " 
+        "   . aq1 aq1 aq1 aq1 aq1 aq1  . " 
+        "   .  .   .   .   .   .   .   . " 
+        "   .  .   .  ic2 ic2 ic2 ic2  . " 
+        "   .  tx2 tx2 tx2 tx2 .   .   . " 
+        "   .  aq2 aq2 aq2 aq2 aq2 aq2 . " 
+        "   .  .   .   .   .   .   .   . " 
+        "   . ic3 ic3 ic3 ic3  .   .   . " 
+        "   .  .   .  tx3 tx3 tx3 tx3  . " 
+        "   . aq3 aq3 aq3 aq3 aq3 aq3  . " 
+        "   .  .   .   .   .   .   .   . " 
+        "   .  .   .  ic4 ic4 ic4 ic4  . " 
+        "   . tx4 tx4 tx4 tx4  .   .   . " 
+        "   .  aq4 aq4 aq4 aq4 aq4 aq4 . " 
+        "   .  .   .   .   .   .   .   . " 
+        "   .  .  tx5 tx5 tx5 tx5  .   . " 
+        "   .  .   .   .   .   .   .   . " 
+        "   . aq5 aq5 aq5 aq5 aq5 aq5 .  " 
+        "   .  .   .   .   .   .   .   . " 
+        "   .  .  tx6 tx6 tx6 tx6  .   . " 
+        "   .  .   .   .   .   .   .   . " 
+        "   . ic5 ic5 ic5 ic5 ic5 ic5 .  " 
+        "   .  .   .   .   .   .   .   . " 
+        "   . ic ic6 ic6 ic6 ic6 ic6  . ";
+    }   
+
+}
+
+@media (min-width: 75em) {
+    .main-container {
+        display: grid;
+        column-gap: 1em;
+        background-image: url('./img/paper-1074131_1280.jpg');
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+        max-width: 72em;
+        overflow: hidden;
+        grid-template-columns: repeat(12em,1em);
+        grid-template-rows: repeat(8em,auto);
+        grid-template-areas:
+        "   . . . ban ban ban ban ban ban . . . " 
+        "   .  .   .   .   .   .   .   .   .   .   .  . " 
+        "   . ic1 ic1 ic1 ic1 ic1 tx1 tx1 tx1 tx1 tx1 ." 
+        "   .  .   .   .   .   .   .   .   .   .   .  . " 
+        "   .  .   .  aq1 aq1 aq1 aq1 aq1 aq1  .   .  . " 
+        "   .  .   .   .   .   .   .   .   .   .   .  . " 
+        "   . tx2 tx2 tx2 tx2 tx2 ic2 ic2 ic2 ic2 ic2 ." 
+        "   .  .   .   .   .   .   .   .   .   .   .  . " 
+        "   .  .   .  aq2 aq2 aq2 aq2 aq2 aq2  .   .  .  " 
+        "   .  .   .   .   .   .   .   .   .   .   .  . " 
+        "   . ic3 ic3 ic3 ic3 ic3 tx3 tx3 tx3 tx3 tx3 ." 
+        "   .  .   .   .   .   .   .   .   .   .   .  . " 
+        "   .  .   .  aq3 aq3 aq3 aq3 aq3 aq3  .   .  .  " 
+        "   .  .   .   .   .   .   .   .   .   .   .  . " 
+        "   . tx4 tx4 tx4 tx4 tx4 ic4 ic4 ic4 ic4 ic4 ." 
+        "   .  .   .   .   .   .   .   .   .   .   .  . " 
+        "   .  .   .  aq4 aq4 aq4 aq4 aq4 aq4  .  .  .  " 
+        "   .  .   .   .   .   .   .   .   .   .   .  . " 
+        "   . tx5 tx5 tx5 tx5 tx5 tx5 tx5 tx5 tx5 tx5 . " 
+        "   .  .   .   .   .   .   .   .   .   .   .  . " 
+        "   .  .   .  aq5 aq5 aq5 aq5 aq5 aq5  .   .  .  " 
+        "   .  .   .   .   .   .   .   .   .   .   .  . " 
+        "   . tx6 tx6 tx6 tx6 tx6 tx6 tx6 tx6 tx6 tx6 . " 
+        "   .  .   .   .   .   .   .   .   .   .   .  . " 
+        "   . ic5 ic5 ic5 ic5 ic5 ic5 ic5 ic5 ic5 ic5 .  " 
+        "   .  .   .   .   .   .   .   .   .   .   .  . " 
+        "   .  .   .   ic6 ic6 ic6 ic6 ic6 ic6  .   .  .";
+    }
+}
